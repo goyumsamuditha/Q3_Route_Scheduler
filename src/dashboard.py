@@ -81,7 +81,13 @@ if st.button("🚀 Run Evolutionary Optimization"):
     with st.spinner('Running Genetic Algorithm (Evaluating 200 nodes)...'):
         # Instantiate GA Engine
         n_nodes = len(matrices['cargo_weights'])
-        ga = GAEngine(n_nodes, population_size=50, penalty_value=10000, vehicle_capacity=[4000]*8, vehicle_shifts_min=[720]*8)
+        ga = GAEngine(
+            n_nodes, 
+        population_size=50, 
+        penalty_value=10000, 
+        vehicle_capacity=matrices['vehicle_capacities'], 
+        vehicle_shifts_min=matrices['vehicle_shifts_min']
+        )
         
         # Run a quick 20-generation evolution for dashboard speed
         population = ga.initialize_population(50, n_nodes)
