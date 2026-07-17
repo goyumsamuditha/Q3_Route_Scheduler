@@ -30,8 +30,12 @@ class GAEngine:
         for node in chromosome:
             if node == 0:
                 continue  # Skip depot in the chromosome
-            if (current_load + cargo_weights[node] <= self.vehicle_capacity[current_vehicle_id] and
-                current_time + service[node] + time_cost[current_route[-1], node] <= self.vehicle_shifts_min[current_vehicle_id]):
+                
+            cap = self.vehicle_capacity[current_vehicle_id]
+            limit = self.vehicle_shifts_min[current_vehicle_id]
+        
+            if (current_load + cargo_weights[node] <= cap and
+                current_time + service[node] + time_cost[current_route[-1], node] <= limit):
                 
                 current_load += cargo_weights[node]
                 current_time += service[node] + time_cost[current_route[-1], node]
