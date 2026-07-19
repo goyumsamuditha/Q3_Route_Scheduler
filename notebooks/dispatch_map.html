@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed38d5654c9b47cc2fdad5545f5e62a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ed38d5654c9b47cc2fdad5545f5e62a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed38d5654c9b47cc2fdad5545f5e62a4 = L.map(
+                "map_ed38d5654c9b47cc2fdad5545f5e62a4",
+                {
+                    center: [7.8731, 80.7718],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_37dc322cc7790dff008ec5ad3e516154 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_37dc322cc7790dff008ec5ad3e516154.addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var marker_b0b425d95b4268b4ec1906b9ab83f0f0 = L.marker(
+                [6.9271, 79.8612],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_7897b9d920e3742d97adc9f4938678ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf16d36f8650ad33e97f3040e1a330fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fe984a03461cb90502a75ad018ab91c = $(`<div id="html_6fe984a03461cb90502a75ad018ab91c" style="width: 100.0%; height: 100.0%;">Depot</div>`)[0];
+                popup_bf16d36f8650ad33e97f3040e1a330fb.setContent(html_6fe984a03461cb90502a75ad018ab91c);
+            
+        
+
+        marker_b0b425d95b4268b4ec1906b9ab83f0f0.bindPopup(popup_bf16d36f8650ad33e97f3040e1a330fb)
+        ;
+
+        
+    
+    
+                marker_b0b425d95b4268b4ec1906b9ab83f0f0.setIcon(icon_7897b9d920e3742d97adc9f4938678ad);
+            
+    
+            var marker_742921be59f6dee705417e70ba04f04d = L.marker(
+                [6.8391, 79.8779],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_7dc089a42e61af05b9d8965a9dcad691 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dd4f79a9e47209c50f17ab8fa962a17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1166bed5f39548d0d6682f84e9abbc4e = $(`<div id="html_1166bed5f39548d0d6682f84e9abbc4e" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-031<br>                 <b>Vehicle :</b> 1<br>                 <b>Weight:</b> 1051.0 kg<br>                 <b>Revenue:</b> 54000.0 LKR                 </div>`)[0];
+                popup_4dd4f79a9e47209c50f17ab8fa962a17.setContent(html_1166bed5f39548d0d6682f84e9abbc4e);
+            
+        
+
+        marker_742921be59f6dee705417e70ba04f04d.bindPopup(popup_4dd4f79a9e47209c50f17ab8fa962a17)
+        ;
+
+        
+    
+    
+                marker_742921be59f6dee705417e70ba04f04d.setIcon(icon_7dc089a42e61af05b9d8965a9dcad691);
+            
+    
+            var marker_764d30355ac63d26c02d7b7209dd0bfb = L.marker(
+                [8.0344, 80.5699],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_89b67a3eca46ab25ab110637c2166a1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3131ff5fcad9c30675c04504e7fabf7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b21aa0dbec8a22a2fe3255a1285edd03 = $(`<div id="html_b21aa0dbec8a22a2fe3255a1285edd03" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-119 | ORD-119<br>                 <b>Vehicle :</b> 1<br>                 <b>Weight:</b> 1790.0179 kg<br>                 <b>Revenue:</b> 88800.0 LKR                 </div>`)[0];
+                popup_f3131ff5fcad9c30675c04504e7fabf7.setContent(html_b21aa0dbec8a22a2fe3255a1285edd03);
+            
+        
+
+        marker_764d30355ac63d26c02d7b7209dd0bfb.bindPopup(popup_f3131ff5fcad9c30675c04504e7fabf7)
+        ;
+
+        
+    
+    
+                marker_764d30355ac63d26c02d7b7209dd0bfb.setIcon(icon_89b67a3eca46ab25ab110637c2166a1f);
+            
+    
+            var poly_line_ba99ebbf87c0719b2c521225f65cfc38 = L.polyline(
+                [[6.9271, 79.8612], [6.8391, 79.8779], [8.0344, 80.5699], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_ba99ebbf87c0719b2c521225f65cfc38.bindTooltip(
+                `<div>
+                     Vehicle 1 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac160a9d07426002a16434616c5a46ce = L.marker(
+                [7.4818, 80.6303],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_0b3ac16cd6ea252ff06beea1b8a0fe39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_985f7e5e65261bf65989d5d9f6e8dcf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1918021c7d6a8c1c1e05fce43adc1ecd = $(`<div id="html_1918021c7d6a8c1c1e05fce43adc1ecd" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-175<br>                 <b>Vehicle :</b> 2<br>                 <b>Weight:</b> 983.0 kg<br>                 <b>Revenue:</b> 59700.0 LKR                 </div>`)[0];
+                popup_985f7e5e65261bf65989d5d9f6e8dcf4.setContent(html_1918021c7d6a8c1c1e05fce43adc1ecd);
+            
+        
+
+        marker_ac160a9d07426002a16434616c5a46ce.bindPopup(popup_985f7e5e65261bf65989d5d9f6e8dcf4)
+        ;
+
+        
+    
+    
+                marker_ac160a9d07426002a16434616c5a46ce.setIcon(icon_0b3ac16cd6ea252ff06beea1b8a0fe39);
+            
+    
+            var marker_c63f875b2848b4e5bf85e0a9596e8cdd = L.marker(
+                [7.4812, 80.0263],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_effe306ba8bdd7187450084747595ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02ba52cda6547f21cbd66f4f108bbf43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5e85f59b7d89871d7ef3b33ae4850a7 = $(`<div id="html_e5e85f59b7d89871d7ef3b33ae4850a7" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-115<br>                 <b>Vehicle :</b> 2<br>                 <b>Weight:</b> 1141.0 kg<br>                 <b>Revenue:</b> 26300.0 LKR                 </div>`)[0];
+                popup_02ba52cda6547f21cbd66f4f108bbf43.setContent(html_e5e85f59b7d89871d7ef3b33ae4850a7);
+            
+        
+
+        marker_c63f875b2848b4e5bf85e0a9596e8cdd.bindPopup(popup_02ba52cda6547f21cbd66f4f108bbf43)
+        ;
+
+        
+    
+    
+                marker_c63f875b2848b4e5bf85e0a9596e8cdd.setIcon(icon_effe306ba8bdd7187450084747595ce9);
+            
+    
+            var poly_line_1267375af21bf4f9fa819e907fc5bd09 = L.polyline(
+                [[6.9271, 79.8612], [7.4818, 80.6303], [7.4812, 80.0263], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_1267375af21bf4f9fa819e907fc5bd09.bindTooltip(
+                `<div>
+                     Vehicle 2 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_624062fd62fee7ee9b431f4e34cd636a = L.marker(
+                [6.9074, 80.9107],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_a75507b815dc54d62957a88677d18bdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c43703b112f410eede5f94134af607c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6cf7aa744540c7488dcbae31d29d8fb = $(`<div id="html_f6cf7aa744540c7488dcbae31d29d8fb" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-064 | ORD-064<br>                 <b>Vehicle :</b> 3<br>                 <b>Weight:</b> 2147.02147 kg<br>                 <b>Revenue:</b> 110600.0 LKR                 </div>`)[0];
+                popup_c43703b112f410eede5f94134af607c7.setContent(html_f6cf7aa744540c7488dcbae31d29d8fb);
+            
+        
+
+        marker_624062fd62fee7ee9b431f4e34cd636a.bindPopup(popup_c43703b112f410eede5f94134af607c7)
+        ;
+
+        
+    
+    
+                marker_624062fd62fee7ee9b431f4e34cd636a.setIcon(icon_a75507b815dc54d62957a88677d18bdc);
+            
+    
+            var marker_2d37764011cd0326266c0d835101fc6e = L.marker(
+                [6.9689, 81.0555],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_237907b7cf0a194afbd3b25cda30c3a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f37e3a76b0e23515f560d1b20460ffe4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bdf823ea1d86f62285a42ccfab3f38a = $(`<div id="html_3bdf823ea1d86f62285a42ccfab3f38a" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-095<br>                 <b>Vehicle :</b> 3<br>                 <b>Weight:</b> 1743.0 kg<br>                 <b>Revenue:</b> 38700.0 LKR                 </div>`)[0];
+                popup_f37e3a76b0e23515f560d1b20460ffe4.setContent(html_3bdf823ea1d86f62285a42ccfab3f38a);
+            
+        
+
+        marker_2d37764011cd0326266c0d835101fc6e.bindPopup(popup_f37e3a76b0e23515f560d1b20460ffe4)
+        ;
+
+        
+    
+    
+                marker_2d37764011cd0326266c0d835101fc6e.setIcon(icon_237907b7cf0a194afbd3b25cda30c3a9);
+            
+    
+            var poly_line_609da6fa31161fc5c8be0bb4d4692e2c = L.polyline(
+                [[6.9271, 79.8612], [6.9074, 80.9107], [6.9689, 81.0555], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_609da6fa31161fc5c8be0bb4d4692e2c.bindTooltip(
+                `<div>
+                     Vehicle 3 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_424d8f826ca31e69ee6667e378eb63d5 = L.marker(
+                [6.8515, 79.9308],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_db981274821f7046c9cacd42291f41ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14d311fb68a12d263075edd4b648ac44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5615c17ca453333e5f6b595f85e6f7fd = $(`<div id="html_5615c17ca453333e5f6b595f85e6f7fd" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-067<br>                 <b>Vehicle :</b> 4<br>                 <b>Weight:</b> 1257.0 kg<br>                 <b>Revenue:</b> 37700.0 LKR                 </div>`)[0];
+                popup_14d311fb68a12d263075edd4b648ac44.setContent(html_5615c17ca453333e5f6b595f85e6f7fd);
+            
+        
+
+        marker_424d8f826ca31e69ee6667e378eb63d5.bindPopup(popup_14d311fb68a12d263075edd4b648ac44)
+        ;
+
+        
+    
+    
+                marker_424d8f826ca31e69ee6667e378eb63d5.setIcon(icon_db981274821f7046c9cacd42291f41ee);
+            
+    
+            var marker_d57cff6d091498015379da724e9fe09f = L.marker(
+                [5.9601, 80.36],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_857e5834c4af6e67ad3a7a87075f0d34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3f66c6cf39de4ccc7e229fcdf603c0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4f3f5b2e5b373395c5db5d87833716b = $(`<div id="html_e4f3f5b2e5b373395c5db5d87833716b" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-002<br>                 <b>Vehicle :</b> 4<br>                 <b>Weight:</b> 1564.0 kg<br>                 <b>Revenue:</b> 36200.0 LKR                 </div>`)[0];
+                popup_e3f66c6cf39de4ccc7e229fcdf603c0a.setContent(html_e4f3f5b2e5b373395c5db5d87833716b);
+            
+        
+
+        marker_d57cff6d091498015379da724e9fe09f.bindPopup(popup_e3f66c6cf39de4ccc7e229fcdf603c0a)
+        ;
+
+        
+    
+    
+                marker_d57cff6d091498015379da724e9fe09f.setIcon(icon_857e5834c4af6e67ad3a7a87075f0d34);
+            
+    
+            var marker_be4707046fa1ab062bfe0bf936b3dee2 = L.marker(
+                [6.0254, 80.7579],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_81c9dded4ea6c7d572abd6b86c0e1905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74df4883d20b0daed903411fd3a204db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_402a9acbc357e68c115c82ac6025fd62 = $(`<div id="html_402a9acbc357e68c115c82ac6025fd62" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-015<br>                 <b>Vehicle :</b> 4<br>                 <b>Weight:</b> 1818.0 kg<br>                 <b>Revenue:</b> 29400.0 LKR                 </div>`)[0];
+                popup_74df4883d20b0daed903411fd3a204db.setContent(html_402a9acbc357e68c115c82ac6025fd62);
+            
+        
+
+        marker_be4707046fa1ab062bfe0bf936b3dee2.bindPopup(popup_74df4883d20b0daed903411fd3a204db)
+        ;
+
+        
+    
+    
+                marker_be4707046fa1ab062bfe0bf936b3dee2.setIcon(icon_81c9dded4ea6c7d572abd6b86c0e1905);
+            
+    
+            var poly_line_22fc5f12fe6d16450f44b8ee2fa2ea5a = L.polyline(
+                [[6.9271, 79.8612], [6.8515, 79.9308], [5.9601, 80.36], [6.0254, 80.7579], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_22fc5f12fe6d16450f44b8ee2fa2ea5a.bindTooltip(
+                `<div>
+                     Vehicle 4 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b025f6d23f00aea3d49e66021d035a79 = L.marker(
+                [6.7702, 79.8737],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_31c6c7102fbff5dbc6368ca95ff483a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24823a38144bb6a7f4b7e6aea6c5614b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2439e73e996dee7421a81fc094d1785 = $(`<div id="html_d2439e73e996dee7421a81fc094d1785" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-148<br>                 <b>Vehicle :</b> 5<br>                 <b>Weight:</b> 822.0 kg<br>                 <b>Revenue:</b> 54800.0 LKR                 </div>`)[0];
+                popup_24823a38144bb6a7f4b7e6aea6c5614b.setContent(html_d2439e73e996dee7421a81fc094d1785);
+            
+        
+
+        marker_b025f6d23f00aea3d49e66021d035a79.bindPopup(popup_24823a38144bb6a7f4b7e6aea6c5614b)
+        ;
+
+        
+    
+    
+                marker_b025f6d23f00aea3d49e66021d035a79.setIcon(icon_31c6c7102fbff5dbc6368ca95ff483a3);
+            
+    
+            var marker_75af6355f617b1dc75273863c7adc37f = L.marker(
+                [7.374, 80.605],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_f997ae3ddda118e859d948b6eee89d42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d8e65125bedbb270a92ff0df2f3b364 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3b81a1f2a30dad5af5770a1ffe525ed = $(`<div id="html_d3b81a1f2a30dad5af5770a1ffe525ed" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-176<br>                 <b>Vehicle :</b> 5<br>                 <b>Weight:</b> 992.0 kg<br>                 <b>Revenue:</b> 36200.0 LKR                 </div>`)[0];
+                popup_7d8e65125bedbb270a92ff0df2f3b364.setContent(html_d3b81a1f2a30dad5af5770a1ffe525ed);
+            
+        
+
+        marker_75af6355f617b1dc75273863c7adc37f.bindPopup(popup_7d8e65125bedbb270a92ff0df2f3b364)
+        ;
+
+        
+    
+    
+                marker_75af6355f617b1dc75273863c7adc37f.setIcon(icon_f997ae3ddda118e859d948b6eee89d42);
+            
+    
+            var marker_4a6645e49684133ea210f768ef29b3a1 = L.marker(
+                [7.3453, 80.6406],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_7f245640d2353e58ec0ef3ca1bc5719c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea29f06432d01d30cdf7103fd8ea521f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3d61113c1c6385eef9705d3ccf47d5e = $(`<div id="html_c3d61113c1c6385eef9705d3ccf47d5e" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-069<br>                 <b>Vehicle :</b> 5<br>                 <b>Weight:</b> 1664.0 kg<br>                 <b>Revenue:</b> 26600.0 LKR                 </div>`)[0];
+                popup_ea29f06432d01d30cdf7103fd8ea521f.setContent(html_c3d61113c1c6385eef9705d3ccf47d5e);
+            
+        
+
+        marker_4a6645e49684133ea210f768ef29b3a1.bindPopup(popup_ea29f06432d01d30cdf7103fd8ea521f)
+        ;
+
+        
+    
+    
+                marker_4a6645e49684133ea210f768ef29b3a1.setIcon(icon_7f245640d2353e58ec0ef3ca1bc5719c);
+            
+    
+            var marker_92226f89d49ca6132a4ad8c9d4bf35e5 = L.marker(
+                [7.2885, 80.6251],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_5735b68be2316d593bac0f1c05973cac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb33e12174c41eed2b94234b386b249b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eff4c227eaffdaf30b9fd6a38ceda88b = $(`<div id="html_eff4c227eaffdaf30b9fd6a38ceda88b" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-040<br>                 <b>Vehicle :</b> 5<br>                 <b>Weight:</b> 2198.0 kg<br>                 <b>Revenue:</b> 18100.0 LKR                 </div>`)[0];
+                popup_fb33e12174c41eed2b94234b386b249b.setContent(html_eff4c227eaffdaf30b9fd6a38ceda88b);
+            
+        
+
+        marker_92226f89d49ca6132a4ad8c9d4bf35e5.bindPopup(popup_fb33e12174c41eed2b94234b386b249b)
+        ;
+
+        
+    
+    
+                marker_92226f89d49ca6132a4ad8c9d4bf35e5.setIcon(icon_5735b68be2316d593bac0f1c05973cac);
+            
+    
+            var marker_4ff2f6c2a87c697dde21b0341b7f3915 = L.marker(
+                [6.9456, 79.892],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_e88b46a9a38894bf6c162affc7060203 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_953cdf3333c5d1d15f331abc1396ed54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1435b4901d28c98bcbfde6e757adb589 = $(`<div id="html_1435b4901d28c98bcbfde6e757adb589" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-019<br>                 <b>Vehicle :</b> 5<br>                 <b>Weight:</b> 1425.0 kg<br>                 <b>Revenue:</b> 28800.0 LKR                 </div>`)[0];
+                popup_953cdf3333c5d1d15f331abc1396ed54.setContent(html_1435b4901d28c98bcbfde6e757adb589);
+            
+        
+
+        marker_4ff2f6c2a87c697dde21b0341b7f3915.bindPopup(popup_953cdf3333c5d1d15f331abc1396ed54)
+        ;
+
+        
+    
+    
+                marker_4ff2f6c2a87c697dde21b0341b7f3915.setIcon(icon_e88b46a9a38894bf6c162affc7060203);
+            
+    
+            var poly_line_659fb7b6202eecb34372769bf8e60ee4 = L.polyline(
+                [[6.9271, 79.8612], [6.7702, 79.8737], [7.374, 80.605], [7.3453, 80.6406], [7.2885, 80.6251], [6.9456, 79.892], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_659fb7b6202eecb34372769bf8e60ee4.bindTooltip(
+                `<div>
+                     Vehicle 5 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff83db785bd1d7ac9c286d9e9a7bc7e1 = L.marker(
+                [6.4686, 79.9969],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_1eb3b7b943dc059a507553e68a844a87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f233832bf7748bd807d48040607d0ddf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42f0ceb9231a64636f5f89043ad7dcdf = $(`<div id="html_42f0ceb9231a64636f5f89043ad7dcdf" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-088<br>                 <b>Vehicle :</b> 6<br>                 <b>Weight:</b> 2062.0 kg<br>                 <b>Revenue:</b> 56000.0 LKR                 </div>`)[0];
+                popup_f233832bf7748bd807d48040607d0ddf.setContent(html_42f0ceb9231a64636f5f89043ad7dcdf);
+            
+        
+
+        marker_ff83db785bd1d7ac9c286d9e9a7bc7e1.bindPopup(popup_f233832bf7748bd807d48040607d0ddf)
+        ;
+
+        
+    
+    
+                marker_ff83db785bd1d7ac9c286d9e9a7bc7e1.setIcon(icon_1eb3b7b943dc059a507553e68a844a87);
+            
+    
+            var marker_02b2e3941c25cbbe2f209f27de44bdf8 = L.marker(
+                [6.8546, 80.0158],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_93b710512da227f82b2654398384e3d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d677016d541110e3e32d8c47b3aba927 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03e44b4591d36c71702543c869220bbb = $(`<div id="html_03e44b4591d36c71702543c869220bbb" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-010<br>                 <b>Vehicle :</b> 6<br>                 <b>Weight:</b> 909.0 kg<br>                 <b>Revenue:</b> 25300.0 LKR                 </div>`)[0];
+                popup_d677016d541110e3e32d8c47b3aba927.setContent(html_03e44b4591d36c71702543c869220bbb);
+            
+        
+
+        marker_02b2e3941c25cbbe2f209f27de44bdf8.bindPopup(popup_d677016d541110e3e32d8c47b3aba927)
+        ;
+
+        
+    
+    
+                marker_02b2e3941c25cbbe2f209f27de44bdf8.setIcon(icon_93b710512da227f82b2654398384e3d1);
+            
+    
+            var marker_0a734756a388320688092d4b8d832457 = L.marker(
+                [7.4737, 80.0474],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_903ac9049660417892c96ffb50d32b26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8b9d25ceafc23fc5fc335cc1447c758 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfd32e22de09d6180cbf0a395d544851 = $(`<div id="html_bfd32e22de09d6180cbf0a395d544851" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-172<br>                 <b>Vehicle :</b> 6<br>                 <b>Weight:</b> 2192.0 kg<br>                 <b>Revenue:</b> 33100.0 LKR                 </div>`)[0];
+                popup_b8b9d25ceafc23fc5fc335cc1447c758.setContent(html_bfd32e22de09d6180cbf0a395d544851);
+            
+        
+
+        marker_0a734756a388320688092d4b8d832457.bindPopup(popup_b8b9d25ceafc23fc5fc335cc1447c758)
+        ;
+
+        
+    
+    
+                marker_0a734756a388320688092d4b8d832457.setIcon(icon_903ac9049660417892c96ffb50d32b26);
+            
+    
+            var marker_d15fd8f0da05c792394b3d3ba827fed9 = L.marker(
+                [5.9871, 80.3539],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_1cb06a4eb9a5f7c9eaba337ba30e21af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca5d8322cd354b91de9ba302c1aac59c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6975b1804669d6c61626c531f9dfa7c6 = $(`<div id="html_6975b1804669d6c61626c531f9dfa7c6" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-168<br>                 <b>Vehicle :</b> 6<br>                 <b>Weight:</b> 2180.0 kg<br>                 <b>Revenue:</b> 42000.0 LKR                 </div>`)[0];
+                popup_ca5d8322cd354b91de9ba302c1aac59c.setContent(html_6975b1804669d6c61626c531f9dfa7c6);
+            
+        
+
+        marker_d15fd8f0da05c792394b3d3ba827fed9.bindPopup(popup_ca5d8322cd354b91de9ba302c1aac59c)
+        ;
+
+        
+    
+    
+                marker_d15fd8f0da05c792394b3d3ba827fed9.setIcon(icon_1cb06a4eb9a5f7c9eaba337ba30e21af);
+            
+    
+            var poly_line_850ed06f14f2eb14dff62e6a0f66178b = L.polyline(
+                [[6.9271, 79.8612], [6.4686, 79.9969], [6.8546, 80.0158], [7.4737, 80.0474], [5.9871, 80.3539], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_850ed06f14f2eb14dff62e6a0f66178b.bindTooltip(
+                `<div>
+                     Vehicle 6 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bacc1464a2d33e3ac69b8182c576695e = L.marker(
+                [6.8767, 79.9304],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_e527b848b9f3a99ebd7f6d32cabe7dee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57d2260d8427894de80f475b6842a6aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6afbf7686b9b55fc8c7c6dc256f30be0 = $(`<div id="html_6afbf7686b9b55fc8c7c6dc256f30be0" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-152<br>                 <b>Vehicle :</b> 7<br>                 <b>Weight:</b> 1274.0 kg<br>                 <b>Revenue:</b> 10500.0 LKR                 </div>`)[0];
+                popup_57d2260d8427894de80f475b6842a6aa.setContent(html_6afbf7686b9b55fc8c7c6dc256f30be0);
+            
+        
+
+        marker_bacc1464a2d33e3ac69b8182c576695e.bindPopup(popup_57d2260d8427894de80f475b6842a6aa)
+        ;
+
+        
+    
+    
+                marker_bacc1464a2d33e3ac69b8182c576695e.setIcon(icon_e527b848b9f3a99ebd7f6d32cabe7dee);
+            
+    
+            var marker_d3a0d80090b7a758445395b6ee9a7e8c = L.marker(
+                [8.1248, 80.9376],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_0d8d3f4e6994861d3fb48c39f457705e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f99379f1d4a7f8aef1710f3b3671b33f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e86c4881762dccf01e195cf5a005c598 = $(`<div id="html_e86c4881762dccf01e195cf5a005c598" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-143<br>                 <b>Vehicle :</b> 7<br>                 <b>Weight:</b> 1439.0 kg<br>                 <b>Revenue:</b> 33800.0 LKR                 </div>`)[0];
+                popup_f99379f1d4a7f8aef1710f3b3671b33f.setContent(html_e86c4881762dccf01e195cf5a005c598);
+            
+        
+
+        marker_d3a0d80090b7a758445395b6ee9a7e8c.bindPopup(popup_f99379f1d4a7f8aef1710f3b3671b33f)
+        ;
+
+        
+    
+    
+                marker_d3a0d80090b7a758445395b6ee9a7e8c.setIcon(icon_0d8d3f4e6994861d3fb48c39f457705e);
+            
+    
+            var marker_7a031bf65f7332894f1252b7f391497b = L.marker(
+                [9.6702, 80.1577],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_bcd80ef1387ff0830657f1332551352a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8a3d91bd784331b6ce574c80af9ab7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_911328d9c03ce2544958ca76129d3067 = $(`<div id="html_911328d9c03ce2544958ca76129d3067" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-023<br>                 <b>Vehicle :</b> 7<br>                 <b>Weight:</b> 1705.0 kg<br>                 <b>Revenue:</b> 34400.0 LKR                 </div>`)[0];
+                popup_d8a3d91bd784331b6ce574c80af9ab7c.setContent(html_911328d9c03ce2544958ca76129d3067);
+            
+        
+
+        marker_7a031bf65f7332894f1252b7f391497b.bindPopup(popup_d8a3d91bd784331b6ce574c80af9ab7c)
+        ;
+
+        
+    
+    
+                marker_7a031bf65f7332894f1252b7f391497b.setIcon(icon_bcd80ef1387ff0830657f1332551352a);
+            
+    
+            var poly_line_1f144f4d1f77e6f4470872c440537bf6 = L.polyline(
+                [[6.9271, 79.8612], [6.8767, 79.9304], [8.1248, 80.9376], [9.6702, 80.1577], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_1f144f4d1f77e6f4470872c440537bf6.bindTooltip(
+                `<div>
+                     Vehicle 7 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b302ddef9115dbfc7f049dd37c6b2ab2 = L.marker(
+                [5.9582, 80.5548],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_96666204683823fca1930c78c787eade = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ccf2952fc4b01a965cccd029caf29aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9ac75ff81c66f008543ec63dea53ef0 = $(`<div id="html_d9ac75ff81c66f008543ec63dea53ef0" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-012 | ORD-012<br>                 <b>Vehicle :</b> 8<br>                 <b>Weight:</b> 2129.02129 kg<br>                 <b>Revenue:</b> 59000.0 LKR                 </div>`)[0];
+                popup_3ccf2952fc4b01a965cccd029caf29aa.setContent(html_d9ac75ff81c66f008543ec63dea53ef0);
+            
+        
+
+        marker_b302ddef9115dbfc7f049dd37c6b2ab2.bindPopup(popup_3ccf2952fc4b01a965cccd029caf29aa)
+        ;
+
+        
+    
+    
+                marker_b302ddef9115dbfc7f049dd37c6b2ab2.setIcon(icon_96666204683823fca1930c78c787eade);
+            
+    
+            var poly_line_b11059daa90d67b1564d13fa93af426e = L.polyline(
+                [[6.9271, 79.8612], [5.9582, 80.5548], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_b11059daa90d67b1564d13fa93af426e.bindTooltip(
+                `<div>
+                     Vehicle 8 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e890ba39bb9b842555071dd3d8e7cbb1 = L.marker(
+                [6.2808, 81.2885],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_de3d7bff9233d3c52271614ac0e78abb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0de94f92f1c8a99e159dbde5dd9f1b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e95871f241ef9b004694f1073380b1ad = $(`<div id="html_e95871f241ef9b004694f1073380b1ad" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-003<br>                 <b>Vehicle :</b> 9<br>                 <b>Weight:</b> 889.0 kg<br>                 <b>Revenue:</b> 49600.0 LKR                 </div>`)[0];
+                popup_a0de94f92f1c8a99e159dbde5dd9f1b0.setContent(html_e95871f241ef9b004694f1073380b1ad);
+            
+        
+
+        marker_e890ba39bb9b842555071dd3d8e7cbb1.bindPopup(popup_a0de94f92f1c8a99e159dbde5dd9f1b0)
+        ;
+
+        
+    
+    
+                marker_e890ba39bb9b842555071dd3d8e7cbb1.setIcon(icon_de3d7bff9233d3c52271614ac0e78abb);
+            
+    
+            var marker_d9cd2d6777604a90655b1ebd1462206f = L.marker(
+                [6.0488, 80.2103],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_98a1b210760a2d707ff173292c5381a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc88f97684ea83cfb6c91db8f2361798 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a30b54e4d27e717823f4720784a90f8c = $(`<div id="html_a30b54e4d27e717823f4720784a90f8c" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-158<br>                 <b>Vehicle :</b> 9<br>                 <b>Weight:</b> 2047.0 kg<br>                 <b>Revenue:</b> 34900.0 LKR                 </div>`)[0];
+                popup_bc88f97684ea83cfb6c91db8f2361798.setContent(html_a30b54e4d27e717823f4720784a90f8c);
+            
+        
+
+        marker_d9cd2d6777604a90655b1ebd1462206f.bindPopup(popup_bc88f97684ea83cfb6c91db8f2361798)
+        ;
+
+        
+    
+    
+                marker_d9cd2d6777604a90655b1ebd1462206f.setIcon(icon_98a1b210760a2d707ff173292c5381a5);
+            
+    
+            var poly_line_7959a3d44623d79af9e71aba3a061d6f = L.polyline(
+                [[6.9271, 79.8612], [6.2808, 81.2885], [6.0488, 80.2103], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_7959a3d44623d79af9e71aba3a061d6f.bindTooltip(
+                `<div>
+                     Vehicle 9 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b0e26d0be53739d6354ad1032865441c = L.marker(
+                [6.8869, 80.5889],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_fa81e003d1035e8d7dde0fad6b444d9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_745cdd45654030aa0ec5603ec375b783 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a204d94769a87af1d9a1523dea82c41 = $(`<div id="html_3a204d94769a87af1d9a1523dea82c41" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-146<br>                 <b>Vehicle :</b> 10<br>                 <b>Weight:</b> 1812.0 kg<br>                 <b>Revenue:</b> 51200.0 LKR                 </div>`)[0];
+                popup_745cdd45654030aa0ec5603ec375b783.setContent(html_3a204d94769a87af1d9a1523dea82c41);
+            
+        
+
+        marker_b0e26d0be53739d6354ad1032865441c.bindPopup(popup_745cdd45654030aa0ec5603ec375b783)
+        ;
+
+        
+    
+    
+                marker_b0e26d0be53739d6354ad1032865441c.setIcon(icon_fa81e003d1035e8d7dde0fad6b444d9a);
+            
+    
+            var marker_e93123ecbe8d527e192e6a687da332d6 = L.marker(
+                [6.246, 80.0649],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_1e1a8eeccd869df13012d9950e9f39c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b528a2f11144c95dce65b6684d5ef4da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c96259c4df38f8e11a1f174527dff22e = $(`<div id="html_c96259c4df38f8e11a1f174527dff22e" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-071<br>                 <b>Vehicle :</b> 10<br>                 <b>Weight:</b> 2145.0 kg<br>                 <b>Revenue:</b> 36200.0 LKR                 </div>`)[0];
+                popup_b528a2f11144c95dce65b6684d5ef4da.setContent(html_c96259c4df38f8e11a1f174527dff22e);
+            
+        
+
+        marker_e93123ecbe8d527e192e6a687da332d6.bindPopup(popup_b528a2f11144c95dce65b6684d5ef4da)
+        ;
+
+        
+    
+    
+                marker_e93123ecbe8d527e192e6a687da332d6.setIcon(icon_1e1a8eeccd869df13012d9950e9f39c4);
+            
+    
+            var marker_9f788319af0c7c22684fdc19884259dd = L.marker(
+                [6.8172, 79.8783],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_03fb4144474cb654364b5e1f02ccf94a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c24d1d07bb3fbb3d47bd810b6d4c8f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2f02797d244b6af60f18b9d38e6b092 = $(`<div id="html_b2f02797d244b6af60f18b9d38e6b092" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-054<br>                 <b>Vehicle :</b> 10<br>                 <b>Weight:</b> 952.0 kg<br>                 <b>Revenue:</b> 27100.0 LKR                 </div>`)[0];
+                popup_0c24d1d07bb3fbb3d47bd810b6d4c8f1.setContent(html_b2f02797d244b6af60f18b9d38e6b092);
+            
+        
+
+        marker_9f788319af0c7c22684fdc19884259dd.bindPopup(popup_0c24d1d07bb3fbb3d47bd810b6d4c8f1)
+        ;
+
+        
+    
+    
+                marker_9f788319af0c7c22684fdc19884259dd.setIcon(icon_03fb4144474cb654364b5e1f02ccf94a);
+            
+    
+            var poly_line_9dc9df0dbbc5e56da25cb497adb5c4aa = L.polyline(
+                [[6.9271, 79.8612], [6.8869, 80.5889], [6.246, 80.0649], [6.8172, 79.8783], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_9dc9df0dbbc5e56da25cb497adb5c4aa.bindTooltip(
+                `<div>
+                     Vehicle 10 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac248e384fe6702249385ce655bccb0e = L.marker(
+                [6.8939, 79.9252],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_c555ac17fdf172115738a5475658c3fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b35872c8479f3578ffb25873268b5596 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e926e52040e73ece05075176613f6c12 = $(`<div id="html_e926e52040e73ece05075176613f6c12" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-094<br>                 <b>Vehicle :</b> 11<br>                 <b>Weight:</b> 812.0 kg<br>                 <b>Revenue:</b> 21700.0 LKR                 </div>`)[0];
+                popup_b35872c8479f3578ffb25873268b5596.setContent(html_e926e52040e73ece05075176613f6c12);
+            
+        
+
+        marker_ac248e384fe6702249385ce655bccb0e.bindPopup(popup_b35872c8479f3578ffb25873268b5596)
+        ;
+
+        
+    
+    
+                marker_ac248e384fe6702249385ce655bccb0e.setIcon(icon_c555ac17fdf172115738a5475658c3fe);
+            
+    
+            var marker_d7157ee85c598cd9b170136c007684c8 = L.marker(
+                [6.7073, 79.897],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_d050ab84f23658ea7dbe64eec72b9b5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d9358c574354065d34057616eadd39f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac6e4901153769aa3983016248124723 = $(`<div id="html_ac6e4901153769aa3983016248124723" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-004<br>                 <b>Vehicle :</b> 11<br>                 <b>Weight:</b> 2269.0 kg<br>                 <b>Revenue:</b> 42100.0 LKR                 </div>`)[0];
+                popup_7d9358c574354065d34057616eadd39f.setContent(html_ac6e4901153769aa3983016248124723);
+            
+        
+
+        marker_d7157ee85c598cd9b170136c007684c8.bindPopup(popup_7d9358c574354065d34057616eadd39f)
+        ;
+
+        
+    
+    
+                marker_d7157ee85c598cd9b170136c007684c8.setIcon(icon_d050ab84f23658ea7dbe64eec72b9b5a);
+            
+    
+            var marker_6151df68bbb1d8bc31f75dc18c64000b = L.marker(
+                [6.7183, 80.0659],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_6c3f693ce3addb6cb9f05aad8cfb679e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_978ded811c15d9707d5ed624cb31779a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a44673bc3a41fcef5413bb7cb158677a = $(`<div id="html_a44673bc3a41fcef5413bb7cb158677a" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-178<br>                 <b>Vehicle :</b> 11<br>                 <b>Weight:</b> 2335.0 kg<br>                 <b>Revenue:</b> 40300.0 LKR                 </div>`)[0];
+                popup_978ded811c15d9707d5ed624cb31779a.setContent(html_a44673bc3a41fcef5413bb7cb158677a);
+            
+        
+
+        marker_6151df68bbb1d8bc31f75dc18c64000b.bindPopup(popup_978ded811c15d9707d5ed624cb31779a)
+        ;
+
+        
+    
+    
+                marker_6151df68bbb1d8bc31f75dc18c64000b.setIcon(icon_6c3f693ce3addb6cb9f05aad8cfb679e);
+            
+    
+            var marker_72f3b127181784ca6bf9cbbabc39a7a4 = L.marker(
+                [6.8328, 80.0151],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_2fc4395d2009065a1204fc0f0b4dcf96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f994f0224c0cd313f2b00c21d3a37e80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbdb989504cbf86243877c0001fc86ae = $(`<div id="html_cbdb989504cbf86243877c0001fc86ae" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-044<br>                 <b>Vehicle :</b> 11<br>                 <b>Weight:</b> 951.0 kg<br>                 <b>Revenue:</b> 40800.0 LKR                 </div>`)[0];
+                popup_f994f0224c0cd313f2b00c21d3a37e80.setContent(html_cbdb989504cbf86243877c0001fc86ae);
+            
+        
+
+        marker_72f3b127181784ca6bf9cbbabc39a7a4.bindPopup(popup_f994f0224c0cd313f2b00c21d3a37e80)
+        ;
+
+        
+    
+    
+                marker_72f3b127181784ca6bf9cbbabc39a7a4.setIcon(icon_2fc4395d2009065a1204fc0f0b4dcf96);
+            
+    
+            var marker_56ac69c65d005972e4235e03ad663b38 = L.marker(
+                [7.4029, 81.8027],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_e1a8dfcc395285814acf951a13c7676a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82007645f50a440269faeee50828b6ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8450d16147a564ab32a3f38e4f28bb4 = $(`<div id="html_f8450d16147a564ab32a3f38e4f28bb4" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-103<br>                 <b>Vehicle :</b> 11<br>                 <b>Weight:</b> 1263.0 kg<br>                 <b>Revenue:</b> 58600.0 LKR                 </div>`)[0];
+                popup_82007645f50a440269faeee50828b6ab.setContent(html_f8450d16147a564ab32a3f38e4f28bb4);
+            
+        
+
+        marker_56ac69c65d005972e4235e03ad663b38.bindPopup(popup_82007645f50a440269faeee50828b6ab)
+        ;
+
+        
+    
+    
+                marker_56ac69c65d005972e4235e03ad663b38.setIcon(icon_e1a8dfcc395285814acf951a13c7676a);
+            
+    
+            var poly_line_e510c326463fb8469687f73052106e07 = L.polyline(
+                [[6.9271, 79.8612], [6.8939, 79.9252], [6.7073, 79.897], [6.7183, 80.0659], [6.8328, 80.0151], [7.4029, 81.8027], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_e510c326463fb8469687f73052106e07.bindTooltip(
+                `<div>
+                     Vehicle 11 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e9f3110f5d977c500c31f6e9f4ec4112 = L.marker(
+                [6.3525, 80.8474],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_cd3c339ffb054a98d622a5a7c1971a48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_133c3b542da6309ee3ca7a41ec7ff58c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d75b2470795398d6d8a0f398e375dd07 = $(`<div id="html_d75b2470795398d6d8a0f398e375dd07" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-121<br>                 <b>Vehicle :</b> 12<br>                 <b>Weight:</b> 2244.0 kg<br>                 <b>Revenue:</b> 54400.0 LKR                 </div>`)[0];
+                popup_133c3b542da6309ee3ca7a41ec7ff58c.setContent(html_d75b2470795398d6d8a0f398e375dd07);
+            
+        
+
+        marker_e9f3110f5d977c500c31f6e9f4ec4112.bindPopup(popup_133c3b542da6309ee3ca7a41ec7ff58c)
+        ;
+
+        
+    
+    
+                marker_e9f3110f5d977c500c31f6e9f4ec4112.setIcon(icon_cd3c339ffb054a98d622a5a7c1971a48);
+            
+    
+            var poly_line_cfed96acc306209e5a71cc1d9458f611 = L.polyline(
+                [[6.9271, 79.8612], [6.3525, 80.8474], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_cfed96acc306209e5a71cc1d9458f611.bindTooltip(
+                `<div>
+                     Vehicle 12 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bfa6bbc9be11e7f32ca22802f8303379 = L.marker(
+                [6.2805, 81.2894],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_9404851c23ba3b67eb8b07ff70b90b22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99d6c50ba1d6af145d8621ff06b25db8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a25cd1ba66a9c88d751343ecc8a4c8eb = $(`<div id="html_a25cd1ba66a9c88d751343ecc8a4c8eb" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-127 | ORD-127<br>                 <b>Vehicle :</b> 13<br>                 <b>Weight:</b> 1818.01818 kg<br>                 <b>Revenue:</b> 66200.0 LKR                 </div>`)[0];
+                popup_99d6c50ba1d6af145d8621ff06b25db8.setContent(html_a25cd1ba66a9c88d751343ecc8a4c8eb);
+            
+        
+
+        marker_bfa6bbc9be11e7f32ca22802f8303379.bindPopup(popup_99d6c50ba1d6af145d8621ff06b25db8)
+        ;
+
+        
+    
+    
+                marker_bfa6bbc9be11e7f32ca22802f8303379.setIcon(icon_9404851c23ba3b67eb8b07ff70b90b22);
+            
+    
+            var marker_412824bb32a441fa8049f5f82c437181 = L.marker(
+                [6.6994, 79.8947],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_807e9a6c5442a0091086c39f724ef46a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b928059dbca5d7de5a03c82518b5b3b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3a8683ceee5e6805facba52185e7c77 = $(`<div id="html_f3a8683ceee5e6805facba52185e7c77" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-134<br>                 <b>Vehicle :</b> 13<br>                 <b>Weight:</b> 997.0 kg<br>                 <b>Revenue:</b> 16300.0 LKR                 </div>`)[0];
+                popup_b928059dbca5d7de5a03c82518b5b3b8.setContent(html_f3a8683ceee5e6805facba52185e7c77);
+            
+        
+
+        marker_412824bb32a441fa8049f5f82c437181.bindPopup(popup_b928059dbca5d7de5a03c82518b5b3b8)
+        ;
+
+        
+    
+    
+                marker_412824bb32a441fa8049f5f82c437181.setIcon(icon_807e9a6c5442a0091086c39f724ef46a);
+            
+    
+            var poly_line_912a3d004f1258aaa0524a3ea34c528e = L.polyline(
+                [[6.9271, 79.8612], [6.2805, 81.2894], [6.6994, 79.8947], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_912a3d004f1258aaa0524a3ea34c528e.bindTooltip(
+                `<div>
+                     Vehicle 13 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4196538fe6c6abe007d07f099f19f282 = L.marker(
+                [7.9313, 81.5388],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_537d96a94ec0b54f8d8bc3d43b52e11f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e81d6ecab1c92dec53a6f453615c2113 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e671ba6101de3fab414e2923fc987265 = $(`<div id="html_e671ba6101de3fab414e2923fc987265" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-014<br>                 <b>Vehicle :</b> 14<br>                 <b>Weight:</b> 949.0 kg<br>                 <b>Revenue:</b> 19500.0 LKR                 </div>`)[0];
+                popup_e81d6ecab1c92dec53a6f453615c2113.setContent(html_e671ba6101de3fab414e2923fc987265);
+            
+        
+
+        marker_4196538fe6c6abe007d07f099f19f282.bindPopup(popup_e81d6ecab1c92dec53a6f453615c2113)
+        ;
+
+        
+    
+    
+                marker_4196538fe6c6abe007d07f099f19f282.setIcon(icon_537d96a94ec0b54f8d8bc3d43b52e11f);
+            
+    
+            var marker_d3c822a988c6065537eba4498951220b = L.marker(
+                [6.0459, 80.2079],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_20ea763b11bebea6f3eadf7b3b37c96b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c38dd81a0a4d62eeca59d8bddd8ea142 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b462bfc8fce56a1d25898bc6769e6b6 = $(`<div id="html_4b462bfc8fce56a1d25898bc6769e6b6" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-109<br>                 <b>Vehicle :</b> 14<br>                 <b>Weight:</b> 1386.0 kg<br>                 <b>Revenue:</b> 48700.0 LKR                 </div>`)[0];
+                popup_c38dd81a0a4d62eeca59d8bddd8ea142.setContent(html_4b462bfc8fce56a1d25898bc6769e6b6);
+            
+        
+
+        marker_d3c822a988c6065537eba4498951220b.bindPopup(popup_c38dd81a0a4d62eeca59d8bddd8ea142)
+        ;
+
+        
+    
+    
+                marker_d3c822a988c6065537eba4498951220b.setIcon(icon_20ea763b11bebea6f3eadf7b3b37c96b);
+            
+    
+            var poly_line_50d810a1a52eac8919a104d2dc7e5628 = L.polyline(
+                [[6.9271, 79.8612], [7.9313, 81.5388], [6.0459, 80.2079], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_50d810a1a52eac8919a104d2dc7e5628.bindTooltip(
+                `<div>
+                     Vehicle 14 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fa31ee7a952171f85f9a1e06ae4a46bd = L.marker(
+                [7.6362, 80.2209],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_9aa14ab7eb4ff45e83443c781dc5eff1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_237cf22e2f4028daccc60db50cdc3d69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79a677dca4ac3aa184c2a8f1c9414d86 = $(`<div id="html_79a677dca4ac3aa184c2a8f1c9414d86" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-123<br>                 <b>Vehicle :</b> 15<br>                 <b>Weight:</b> 2252.0 kg<br>                 <b>Revenue:</b> 37600.0 LKR                 </div>`)[0];
+                popup_237cf22e2f4028daccc60db50cdc3d69.setContent(html_79a677dca4ac3aa184c2a8f1c9414d86);
+            
+        
+
+        marker_fa31ee7a952171f85f9a1e06ae4a46bd.bindPopup(popup_237cf22e2f4028daccc60db50cdc3d69)
+        ;
+
+        
+    
+    
+                marker_fa31ee7a952171f85f9a1e06ae4a46bd.setIcon(icon_9aa14ab7eb4ff45e83443c781dc5eff1);
+            
+    
+            var marker_025cf85b9c6d8455487760cb7e1fe5f8 = L.marker(
+                [7.2535, 80.3577],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_29ef48cd4a7744739548b4c7676f772e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5842e24e69a1c93bc4de209210928cf8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b6beb2be2e44addaa62ae8d18fe3080 = $(`<div id="html_8b6beb2be2e44addaa62ae8d18fe3080" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-039 | ORD-039<br>                 <b>Vehicle :</b> 15<br>                 <b>Weight:</b> 1506.01506 kg<br>                 <b>Revenue:</b> 44000.0 LKR                 </div>`)[0];
+                popup_5842e24e69a1c93bc4de209210928cf8.setContent(html_8b6beb2be2e44addaa62ae8d18fe3080);
+            
+        
+
+        marker_025cf85b9c6d8455487760cb7e1fe5f8.bindPopup(popup_5842e24e69a1c93bc4de209210928cf8)
+        ;
+
+        
+    
+    
+                marker_025cf85b9c6d8455487760cb7e1fe5f8.setIcon(icon_29ef48cd4a7744739548b4c7676f772e);
+            
+    
+            var marker_98907ab0614c2b88e6e02d45dadf34b2 = L.marker(
+                [7.2854, 80.6283],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_31fa9d0d940e3c88a52b05ee5da8fabd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2fb89b3331220b3696da61134e37ca0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d12d91f6662eaa96a8c779e9a6f3474d = $(`<div id="html_d12d91f6662eaa96a8c779e9a6f3474d" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-108<br>                 <b>Vehicle :</b> 15<br>                 <b>Weight:</b> 942.0 kg<br>                 <b>Revenue:</b> 26800.0 LKR                 </div>`)[0];
+                popup_f2fb89b3331220b3696da61134e37ca0.setContent(html_d12d91f6662eaa96a8c779e9a6f3474d);
+            
+        
+
+        marker_98907ab0614c2b88e6e02d45dadf34b2.bindPopup(popup_f2fb89b3331220b3696da61134e37ca0)
+        ;
+
+        
+    
+    
+                marker_98907ab0614c2b88e6e02d45dadf34b2.setIcon(icon_31fa9d0d940e3c88a52b05ee5da8fabd);
+            
+    
+            var poly_line_9f50396597edb69a9bfad78d87d47809 = L.polyline(
+                [[6.9271, 79.8612], [7.6362, 80.2209], [7.2535, 80.3577], [7.2854, 80.6283], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_9f50396597edb69a9bfad78d87d47809.bindTooltip(
+                `<div>
+                     Vehicle 15 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f6981d80b72eefcb6e67e14b512085eb = L.marker(
+                [5.9605, 80.5616],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_a13c668bda7b1466daf2ad9f042cc8e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bb0edc0c6d14f48f1cac0012ad369aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a31e090b1b364c0b57b67189bf6f3bb = $(`<div id="html_0a31e090b1b364c0b57b67189bf6f3bb" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-135<br>                 <b>Vehicle :</b> 16<br>                 <b>Weight:</b> 1899.0 kg<br>                 <b>Revenue:</b> 40000.0 LKR                 </div>`)[0];
+                popup_4bb0edc0c6d14f48f1cac0012ad369aa.setContent(html_0a31e090b1b364c0b57b67189bf6f3bb);
+            
+        
+
+        marker_f6981d80b72eefcb6e67e14b512085eb.bindPopup(popup_4bb0edc0c6d14f48f1cac0012ad369aa)
+        ;
+
+        
+    
+    
+                marker_f6981d80b72eefcb6e67e14b512085eb.setIcon(icon_a13c668bda7b1466daf2ad9f042cc8e4);
+            
+    
+            var marker_4a514f79564b3a19d386847b88154779 = L.marker(
+                [7.3328, 80.649],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_a5eae7f262f29f45bf9ea5d4b84024e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1ccf9f1fb6d28b5d94dfea1b945b11c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d21f19c83c6b9cb39bc87216e16aac67 = $(`<div id="html_d21f19c83c6b9cb39bc87216e16aac67" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-112<br>                 <b>Vehicle :</b> 16<br>                 <b>Weight:</b> 1159.0 kg<br>                 <b>Revenue:</b> 26200.0 LKR                 </div>`)[0];
+                popup_c1ccf9f1fb6d28b5d94dfea1b945b11c.setContent(html_d21f19c83c6b9cb39bc87216e16aac67);
+            
+        
+
+        marker_4a514f79564b3a19d386847b88154779.bindPopup(popup_c1ccf9f1fb6d28b5d94dfea1b945b11c)
+        ;
+
+        
+    
+    
+                marker_4a514f79564b3a19d386847b88154779.setIcon(icon_a5eae7f262f29f45bf9ea5d4b84024e6);
+            
+    
+            var marker_602379fe4c89bcbb31b443254a97bb6b = L.marker(
+                [6.8403, 79.8682],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_94d29e67195c48e684ead59fdff016fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b712b72bd520f2cc8ea4f5b10f17c7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e51b41c7bded4b5dc4e1600c2b3675f = $(`<div id="html_1e51b41c7bded4b5dc4e1600c2b3675f" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-051<br>                 <b>Vehicle :</b> 16<br>                 <b>Weight:</b> 1428.0 kg<br>                 <b>Revenue:</b> 33100.0 LKR                 </div>`)[0];
+                popup_5b712b72bd520f2cc8ea4f5b10f17c7a.setContent(html_1e51b41c7bded4b5dc4e1600c2b3675f);
+            
+        
+
+        marker_602379fe4c89bcbb31b443254a97bb6b.bindPopup(popup_5b712b72bd520f2cc8ea4f5b10f17c7a)
+        ;
+
+        
+    
+    
+                marker_602379fe4c89bcbb31b443254a97bb6b.setIcon(icon_94d29e67195c48e684ead59fdff016fb);
+            
+    
+            var poly_line_4b1bf334fc6ba2c48fbb5f39c7d355f2 = L.polyline(
+                [[6.9271, 79.8612], [5.9605, 80.5616], [7.3328, 80.649], [6.8403, 79.8682], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_4b1bf334fc6ba2c48fbb5f39c7d355f2.bindTooltip(
+                `<div>
+                     Vehicle 16 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d22940ab97ebbac865ece4a9bb35975 = L.marker(
+                [6.987, 81.0491],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_3767306bfa1a6d5fe225f735af1ccc9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29e7620f0d3884faa291bc6c708b029e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_492c147b1ce202fafa7815292dc27d0f = $(`<div id="html_492c147b1ce202fafa7815292dc27d0f" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-055<br>                 <b>Vehicle :</b> 17<br>                 <b>Weight:</b> 1627.0 kg<br>                 <b>Revenue:</b> 29600.0 LKR                 </div>`)[0];
+                popup_29e7620f0d3884faa291bc6c708b029e.setContent(html_492c147b1ce202fafa7815292dc27d0f);
+            
+        
+
+        marker_7d22940ab97ebbac865ece4a9bb35975.bindPopup(popup_29e7620f0d3884faa291bc6c708b029e)
+        ;
+
+        
+    
+    
+                marker_7d22940ab97ebbac865ece4a9bb35975.setIcon(icon_3767306bfa1a6d5fe225f735af1ccc9a);
+            
+    
+            var marker_d771c2a5e57aeae7df14d6d24577df58 = L.marker(
+                [6.2299, 80.0601],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_765034bf117d4766a7841a44f2cec09e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7dbaae3521931adf4cd50fd5c6961eb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64430bd9f87a223f6366664d60c55639 = $(`<div id="html_64430bd9f87a223f6366664d60c55639" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-101<br>                 <b>Vehicle :</b> 17<br>                 <b>Weight:</b> 958.0 kg<br>                 <b>Revenue:</b> 27100.0 LKR                 </div>`)[0];
+                popup_7dbaae3521931adf4cd50fd5c6961eb3.setContent(html_64430bd9f87a223f6366664d60c55639);
+            
+        
+
+        marker_d771c2a5e57aeae7df14d6d24577df58.bindPopup(popup_7dbaae3521931adf4cd50fd5c6961eb3)
+        ;
+
+        
+    
+    
+                marker_d771c2a5e57aeae7df14d6d24577df58.setIcon(icon_765034bf117d4766a7841a44f2cec09e);
+            
+    
+            var marker_4b5a1c67235184804c60d1ff94cbea63 = L.marker(
+                [6.837, 79.9223],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_4bb5e91a8f970570f3d8ad7319aff5b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6c376ffab4112e0e4a1cf3c0fc2fc66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9380e3194afde5c198e8ba800addf6d3 = $(`<div id="html_9380e3194afde5c198e8ba800addf6d3" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-063<br>                 <b>Vehicle :</b> 17<br>                 <b>Weight:</b> 1428.0 kg<br>                 <b>Revenue:</b> 56300.0 LKR                 </div>`)[0];
+                popup_a6c376ffab4112e0e4a1cf3c0fc2fc66.setContent(html_9380e3194afde5c198e8ba800addf6d3);
+            
+        
+
+        marker_4b5a1c67235184804c60d1ff94cbea63.bindPopup(popup_a6c376ffab4112e0e4a1cf3c0fc2fc66)
+        ;
+
+        
+    
+    
+                marker_4b5a1c67235184804c60d1ff94cbea63.setIcon(icon_4bb5e91a8f970570f3d8ad7319aff5b3);
+            
+    
+            var marker_c6945e9d9248bd5a8a276b32d32cc84b = L.marker(
+                [6.05, 80.2097],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_4993256e75be3f0a1fd60b7c6702daf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfda53b3c5bb9a5190e4e6a6013ea5b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57e3a493530a9ec855d7e530cdc6dea0 = $(`<div id="html_57e3a493530a9ec855d7e530cdc6dea0" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-128<br>                 <b>Vehicle :</b> 17<br>                 <b>Weight:</b> 2415.0 kg<br>                 <b>Revenue:</b> 37900.0 LKR                 </div>`)[0];
+                popup_bfda53b3c5bb9a5190e4e6a6013ea5b3.setContent(html_57e3a493530a9ec855d7e530cdc6dea0);
+            
+        
+
+        marker_c6945e9d9248bd5a8a276b32d32cc84b.bindPopup(popup_bfda53b3c5bb9a5190e4e6a6013ea5b3)
+        ;
+
+        
+    
+    
+                marker_c6945e9d9248bd5a8a276b32d32cc84b.setIcon(icon_4993256e75be3f0a1fd60b7c6702daf6);
+            
+    
+            var poly_line_0fdd1dcb4b8a9dfec4d2530a0685ef71 = L.polyline(
+                [[6.9271, 79.8612], [6.987, 81.0491], [6.2299, 80.0601], [6.837, 79.9223], [6.05, 80.2097], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_0fdd1dcb4b8a9dfec4d2530a0685ef71.bindTooltip(
+                `<div>
+                     Vehicle 17 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_34d8776079c83cfe4fa6dcbfa45dc950 = L.marker(
+                [6.987, 81.0491],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_ccfd677b606630bfaedb0b972ed168d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3202b38f98303aee494fd6fe2718066 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0a0e8a736d902fcb09ef61df608f009 = $(`<div id="html_f0a0e8a736d902fcb09ef61df608f009" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-034<br>                 <b>Vehicle :</b> 18<br>                 <b>Weight:</b> 2198.0 kg<br>                 <b>Revenue:</b> 28000.0 LKR                 </div>`)[0];
+                popup_b3202b38f98303aee494fd6fe2718066.setContent(html_f0a0e8a736d902fcb09ef61df608f009);
+            
+        
+
+        marker_34d8776079c83cfe4fa6dcbfa45dc950.bindPopup(popup_b3202b38f98303aee494fd6fe2718066)
+        ;
+
+        
+    
+    
+                marker_34d8776079c83cfe4fa6dcbfa45dc950.setIcon(icon_ccfd677b606630bfaedb0b972ed168d1);
+            
+    
+            var marker_5db95722d679ae55a0882dc20f5041ff = L.marker(
+                [6.7277, 80.0496],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_2fdf382e9129288667363a1be1907a53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5409b5855fe06b3f25d57eb399d2877 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c977de472d64c43a78994fa7473988dd = $(`<div id="html_c977de472d64c43a78994fa7473988dd" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-097<br>                 <b>Vehicle :</b> 18<br>                 <b>Weight:</b> 1548.0 kg<br>                 <b>Revenue:</b> 49800.0 LKR                 </div>`)[0];
+                popup_e5409b5855fe06b3f25d57eb399d2877.setContent(html_c977de472d64c43a78994fa7473988dd);
+            
+        
+
+        marker_5db95722d679ae55a0882dc20f5041ff.bindPopup(popup_e5409b5855fe06b3f25d57eb399d2877)
+        ;
+
+        
+    
+    
+                marker_5db95722d679ae55a0882dc20f5041ff.setIcon(icon_2fdf382e9129288667363a1be1907a53);
+            
+    
+            var marker_0fe355385e69003cea715154d4bd354f = L.marker(
+                [6.9345, 79.8528],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_cf261e31a43025c2425a81c859923fc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b130e4686263ddc6b3749577209a9e76 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d221f6a60b0a3b88860767e3e9495a6 = $(`<div id="html_5d221f6a60b0a3b88860767e3e9495a6" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-142<br>                 <b>Vehicle :</b> 18<br>                 <b>Weight:</b> 1552.0 kg<br>                 <b>Revenue:</b> 36000.0 LKR                 </div>`)[0];
+                popup_b130e4686263ddc6b3749577209a9e76.setContent(html_5d221f6a60b0a3b88860767e3e9495a6);
+            
+        
+
+        marker_0fe355385e69003cea715154d4bd354f.bindPopup(popup_b130e4686263ddc6b3749577209a9e76)
+        ;
+
+        
+    
+    
+                marker_0fe355385e69003cea715154d4bd354f.setIcon(icon_cf261e31a43025c2425a81c859923fc6);
+            
+    
+            var marker_234feab520a5da2d27cd54fcc1ada427 = L.marker(
+                [7.1647, 79.9488],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_a196d41f5a9b82a12c7f71137f1d777d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fcc0fcbc6b9bd0f2570c50a8cf816e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9b36378145424a318a1095b58bffefd = $(`<div id="html_f9b36378145424a318a1095b58bffefd" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-048<br>                 <b>Vehicle :</b> 18<br>                 <b>Weight:</b> 1282.0 kg<br>                 <b>Revenue:</b> 28700.0 LKR                 </div>`)[0];
+                popup_7fcc0fcbc6b9bd0f2570c50a8cf816e8.setContent(html_f9b36378145424a318a1095b58bffefd);
+            
+        
+
+        marker_234feab520a5da2d27cd54fcc1ada427.bindPopup(popup_7fcc0fcbc6b9bd0f2570c50a8cf816e8)
+        ;
+
+        
+    
+    
+                marker_234feab520a5da2d27cd54fcc1ada427.setIcon(icon_a196d41f5a9b82a12c7f71137f1d777d);
+            
+    
+            var poly_line_97b1fa40696575f221dd79e302259da4 = L.polyline(
+                [[6.9271, 79.8612], [6.987, 81.0491], [6.7277, 80.0496], [6.9345, 79.8528], [7.1647, 79.9488], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_97b1fa40696575f221dd79e302259da4.bindTooltip(
+                `<div>
+                     Vehicle 18 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7af6fc8dab8f183a9390e8568716ec63 = L.marker(
+                [6.6873, 80.4076],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_6416b99751d7e2557528fd59c69dc0a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d9b85cbec6885807b6067a3b8daa73e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d309f3d85cd193aa846e3157c1268642 = $(`<div id="html_d309f3d85cd193aa846e3157c1268642" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-190<br>                 <b>Vehicle :</b> 19<br>                 <b>Weight:</b> 1215.0 kg<br>                 <b>Revenue:</b> 26800.0 LKR                 </div>`)[0];
+                popup_8d9b85cbec6885807b6067a3b8daa73e.setContent(html_d309f3d85cd193aa846e3157c1268642);
+            
+        
+
+        marker_7af6fc8dab8f183a9390e8568716ec63.bindPopup(popup_8d9b85cbec6885807b6067a3b8daa73e)
+        ;
+
+        
+    
+    
+                marker_7af6fc8dab8f183a9390e8568716ec63.setIcon(icon_6416b99751d7e2557528fd59c69dc0a2);
+            
+    
+            var marker_84dbe6bea4d87ea31d5cd78d6f40508a = L.marker(
+                [7.0665, 80.5317],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_2e3e2a27bdae90774e7e857a2c669863 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47c92aa0eb008d7311e142c8c78a4a16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6bb3391c56245cf74623db5c7d555e27 = $(`<div id="html_6bb3391c56245cf74623db5c7d555e27" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-136<br>                 <b>Vehicle :</b> 19<br>                 <b>Weight:</b> 1664.0 kg<br>                 <b>Revenue:</b> 33100.0 LKR                 </div>`)[0];
+                popup_47c92aa0eb008d7311e142c8c78a4a16.setContent(html_6bb3391c56245cf74623db5c7d555e27);
+            
+        
+
+        marker_84dbe6bea4d87ea31d5cd78d6f40508a.bindPopup(popup_47c92aa0eb008d7311e142c8c78a4a16)
+        ;
+
+        
+    
+    
+                marker_84dbe6bea4d87ea31d5cd78d6f40508a.setIcon(icon_2e3e2a27bdae90774e7e857a2c669863);
+            
+    
+            var marker_1f8b09e1171f11ee6c739f3109f2ecc5 = L.marker(
+                [6.0418, 80.224],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_7a4286cf36a1779a5df69e04c5ddcf1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10068759c069938d62b8174cbb257be9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6f2784b81824fc32f267589eb081b5b = $(`<div id="html_b6f2784b81824fc32f267589eb081b5b" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-018<br>                 <b>Vehicle :</b> 19<br>                 <b>Weight:</b> 1766.0 kg<br>                 <b>Revenue:</b> 49100.0 LKR                 </div>`)[0];
+                popup_10068759c069938d62b8174cbb257be9.setContent(html_b6f2784b81824fc32f267589eb081b5b);
+            
+        
+
+        marker_1f8b09e1171f11ee6c739f3109f2ecc5.bindPopup(popup_10068759c069938d62b8174cbb257be9)
+        ;
+
+        
+    
+    
+                marker_1f8b09e1171f11ee6c739f3109f2ecc5.setIcon(icon_7a4286cf36a1779a5df69e04c5ddcf1b);
+            
+    
+            var poly_line_c1d2399b2364f454669d719b5f7a6896 = L.polyline(
+                [[6.9271, 79.8612], [6.6873, 80.4076], [7.0665, 80.5317], [6.0418, 80.224], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_c1d2399b2364f454669d719b5f7a6896.bindTooltip(
+                `<div>
+                     Vehicle 19 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c953219a77afef67d36dbe313fc1d385 = L.marker(
+                [7.2481, 80.3434],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_200ee50c53f5d96d2de2828042e71165 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7aaaf09320bfda02f59136023c3162b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec819a8fca73c742cc80dd901484a0f4 = $(`<div id="html_ec819a8fca73c742cc80dd901484a0f4" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-017<br>                 <b>Vehicle :</b> 20<br>                 <b>Weight:</b> 912.0 kg<br>                 <b>Revenue:</b> 50900.0 LKR                 </div>`)[0];
+                popup_f7aaaf09320bfda02f59136023c3162b.setContent(html_ec819a8fca73c742cc80dd901484a0f4);
+            
+        
+
+        marker_c953219a77afef67d36dbe313fc1d385.bindPopup(popup_f7aaaf09320bfda02f59136023c3162b)
+        ;
+
+        
+    
+    
+                marker_c953219a77afef67d36dbe313fc1d385.setIcon(icon_200ee50c53f5d96d2de2828042e71165);
+            
+    
+            var marker_e85550b206aef7e2a829ceefd868c5bb = L.marker(
+                [8.7503, 80.5087],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_593cb382503c17a181c16d6df67c738b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5298eddbf0e58a93ac88529a51d99cd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4efb3e3329f5af43ded8db9852cb1f9b = $(`<div id="html_4efb3e3329f5af43ded8db9852cb1f9b" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-173<br>                 <b>Vehicle :</b> 20<br>                 <b>Weight:</b> 1343.0 kg<br>                 <b>Revenue:</b> 27700.0 LKR                 </div>`)[0];
+                popup_5298eddbf0e58a93ac88529a51d99cd5.setContent(html_4efb3e3329f5af43ded8db9852cb1f9b);
+            
+        
+
+        marker_e85550b206aef7e2a829ceefd868c5bb.bindPopup(popup_5298eddbf0e58a93ac88529a51d99cd5)
+        ;
+
+        
+    
+    
+                marker_e85550b206aef7e2a829ceefd868c5bb.setIcon(icon_593cb382503c17a181c16d6df67c738b);
+            
+    
+            var poly_line_e22feb376b410a4d9cb49af37a585f0f = L.polyline(
+                [[6.9271, 79.8612], [7.2481, 80.3434], [8.7503, 80.5087], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_e22feb376b410a4d9cb49af37a585f0f.bindTooltip(
+                `<div>
+                     Vehicle 20 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0a2d32aa234e2a7e3cae9725d952b56f = L.marker(
+                [7.2481, 80.3434],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_6c1b082333719a5f25cec9ea551d5679 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d085a5ff668a058ec19b68f87a437a3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f785f5f32a95e7ea4f7e93d7cc68900 = $(`<div id="html_7f785f5f32a95e7ea4f7e93d7cc68900" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-017<br>                 <b>Vehicle :</b> 21<br>                 <b>Weight:</b> 912.0 kg<br>                 <b>Revenue:</b> 50900.0 LKR                 </div>`)[0];
+                popup_d085a5ff668a058ec19b68f87a437a3b.setContent(html_7f785f5f32a95e7ea4f7e93d7cc68900);
+            
+        
+
+        marker_0a2d32aa234e2a7e3cae9725d952b56f.bindPopup(popup_d085a5ff668a058ec19b68f87a437a3b)
+        ;
+
+        
+    
+    
+                marker_0a2d32aa234e2a7e3cae9725d952b56f.setIcon(icon_6c1b082333719a5f25cec9ea551d5679);
+            
+    
+            var marker_b4aaadb79bd8a311111c2398da8702b5 = L.marker(
+                [8.7503, 80.5087],
+                {
+}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            var icon_89275e0a665e412d669e65d6d1720092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b22be2f277121af54eaa0bf95941717 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_082818722e28b0791bcc681fdfc7231c = $(`<div id="html_082818722e28b0791bcc681fdfc7231c" style="width: 100.0%; height: 100.0%;">                 <b>Order ID:</b> ORD-173<br>                 <b>Vehicle :</b> 21<br>                 <b>Weight:</b> 1343.0 kg<br>                 <b>Revenue:</b> 27700.0 LKR                 </div>`)[0];
+                popup_6b22be2f277121af54eaa0bf95941717.setContent(html_082818722e28b0791bcc681fdfc7231c);
+            
+        
+
+        marker_b4aaadb79bd8a311111c2398da8702b5.bindPopup(popup_6b22be2f277121af54eaa0bf95941717)
+        ;
+
+        
+    
+    
+                marker_b4aaadb79bd8a311111c2398da8702b5.setIcon(icon_89275e0a665e412d669e65d6d1720092);
+            
+    
+            var poly_line_7981d37a9fcaa7409e286d416552102e = L.polyline(
+                [[6.9271, 79.8612], [7.2481, 80.3434], [8.7503, 80.5087], [6.9271, 79.8612]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ed38d5654c9b47cc2fdad5545f5e62a4);
+        
+    
+            poly_line_7981d37a9fcaa7409e286d416552102e.bindTooltip(
+                `<div>
+                     Vehicle 21 Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
