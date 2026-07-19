@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 import numpy as np
 import plotly.express as px
+import plotly.graph_objects as go
 
 file_dir = os.path.dirname(os.path.abspath(__file__)) 
 root_dir = os.path.dirname(file_dir)                  
@@ -131,24 +132,48 @@ if st.button("🚀 Run Evolutionary Optimization"):
             st.markdown('<div class="soft-card">', unsafe_allow_html=True)
             st.subheader("🗺️ Live Network Map")
             
-            # Mapbox Configuration
-            fig = px.scatter_mapbox(
-                df[df['Mapping_Status'] != 'Depot'], 
-                lat="Latitude", 
-                lon="Longitude", 
-                color="Mapping_Status",
-                color_discrete_map={
-                    "Routed - Priority 5 (SLA Met)": "#28a745",
-                    "Routed - Standard": "#007bff",
-                    "Deferred": "#ffc107"
-                },
-                size="Cargo_Weight_kg", # Ensure this matches your exact CSV header
-                hover_name="Order_ID",
-                zoom=6.5,
-                center={"lat": 7.8731, "lon": 80.7718},
-                mapbox_style="carto-positron" # Use this instead of 'light' for professional style
+            fig = go.Figure()
+            
+            # Order Points
+            fig.add_trace(go.Scattermapbox(
+                lat=df['Latitude'],
+                lon=df['Longitude'],
+                mode='markers',
+                marker=go.scattermapbox.Marker(
+                    size=9,
+                    color='gray',
+                    opacity=0.7
+                ),
+                name='All Orders'
+            ))
+            
+            # Actual Routed Orders
+            routed_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+            
+            for i, route in enumerate(best_routes):
+                if len(route) > 2:
+                    route_df = df.iloc[route]
+                    
+                    fig.add_trace(go.Scattermapbox(
+                        lat = route_df['Latitude'],
+                        lon = route_df['Longitude'],
+                        mode = 'lines+markers',
+                        line = dict(width=4, color=routed_colors[i % len(routed_colors)]),
+                        marker = dict(size=10, color=routed_colors[i % len(routed_colors)]),
+                        name = f'Vehicle {i+1} Route'
+                    ))
+
+            # map layout
+            fig.update_layout(
+                mapbox = dict(
+                    accesstoken = MAP_API_KEY,
+                    center = dict(lat=7.8731, lon=80.7718),
+                    zoom = 7,
+                    style = "carto-positron"
+                ),
+                showlegend = True,
+                margin = {"r":0,"t":0,"l":0,"b":0}
             )
-            fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
             st.plotly_chart(fig, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
