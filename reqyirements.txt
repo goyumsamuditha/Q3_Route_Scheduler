@@ -1,0 +1,21 @@
+# Data handling
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# Optimisation
+pulp>=2.7.0
+
+# Plotting and visualisation
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.18.0
+folium>=0.15.0
+
+# Interactive dashboard
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+
+# Notebook environment
+jupyter>=1.0.0
+ipykernel>=6.25.0
