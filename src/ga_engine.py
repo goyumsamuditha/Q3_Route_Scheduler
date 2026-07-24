@@ -111,6 +111,7 @@ class GAEngine:
         current_time = 0
         current_load = 0
         current_route = [0]  # Start with the depot (node 0)
+        fleet_exhausted = False  # tracks whether we ran out of vehicles mid-chromosome
         # pull required arrays from matrices
         cargo_weights = matrices['cargo_weights']
         time_cost = matrices['time_cost_matrix']
@@ -133,13 +134,15 @@ class GAEngine:
                 routes.append(current_route + [0])  # Return to depot
                 current_vehicle_id += 1
                 if current_vehicle_id >= len(self.vehicle_capacity):
+                    fleet_exhausted = True
                     break  # No more vehicles available
                 
                 current_load = cargo_weights[node]
                 current_time = service[node] + time_cost[0, node]
                 current_route = [0, node]  # Start new route from depot
-                
-        routes.append(current_route + [0])  # Append the last route returning to depot
+        
+        if not fleet_exhausted:
+            routes.append(current_route + [0])  # Append the last route returning to depot
         return routes
 
     def calculate_fitness(self, decoded_routes, order_values, priorities, cargo_weights):
@@ -191,7 +194,3 @@ class GAEngine:
         idx1, idx2 = np.random.choice(len(mutated_chrom), 2, replace=False)
         mutated_chrom[idx1], mutated_chrom[idx2] = mutated_chrom[idx2], mutated_chrom[idx1]
         return mutated_chrom
-        
-        
-        
-        
